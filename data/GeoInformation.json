@@ -1,0 +1,1339 @@
+[ {
+  "Country" : "United Arab Emirates",
+  "Region" : "Middle east",
+  "Country (#1)" : "AE",
+  "Latidude" : "23.424076",
+  "Longitude" : "53.847818"
+}, {
+  "Country" : "Afghanistan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "AF",
+  "Latidude" : "33.93911",
+  "Longitude" : "67.709953"
+}, {
+  "Country" : "Antigua and Barbuda",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "AG",
+  "Latidude" : "17.060816",
+  "Longitude" : "-61.796428"
+}, {
+  "Country" : "Anguilla",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "AI",
+  "Latidude" : "18.220554",
+  "Longitude" : "-63.068615"
+}, {
+  "Country" : "Albania",
+  "Region" : "Europe",
+  "Country (#1)" : "AL",
+  "Latidude" : "41.153332",
+  "Longitude" : "20.168331"
+}, {
+  "Country" : "Armenia",
+  "Region" : "Europe",
+  "Country (#1)" : "AM",
+  "Latidude" : "40.069099",
+  "Longitude" : "45.038189"
+}, {
+  "Country" : "Netherlands Antilles",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "AN",
+  "Latidude" : "12.226079",
+  "Longitude" : "-69.060087"
+}, {
+  "Country" : "Angola",
+  "Region" : "Africa",
+  "Country (#1)" : "AO",
+  "Latidude" : "-11.202692",
+  "Longitude" : "17.873887"
+}, {
+  "Country" : "Antarctica",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "AQ",
+  "Latidude" : "-75.250973",
+  "Longitude" : "-0.071389"
+}, {
+  "Country" : "Argentina",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "AR",
+  "Latidude" : "-38.416097",
+  "Longitude" : "-63.616672"
+}, {
+  "Country" : "American Samoa",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "AS",
+  "Latidude" : "-14.270972",
+  "Longitude" : "-170.132217"
+}, {
+  "Country" : "Austria",
+  "Region" : "Europe",
+  "Country (#1)" : "AT",
+  "Latidude" : "47.516231",
+  "Longitude" : "14.550072"
+}, {
+  "Country" : "Australia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "AU",
+  "Latidude" : "-25.274398",
+  "Longitude" : "133.775136"
+}, {
+  "Country" : "Aruba",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "AW",
+  "Latidude" : "12.52111",
+  "Longitude" : "-69.968338"
+}, {
+  "Country" : "Azerbaijan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "AZ",
+  "Latidude" : "40.143105",
+  "Longitude" : "47.576927"
+}, {
+  "Country" : "Bosnia and Herzegovina",
+  "Region" : "Europe",
+  "Country (#1)" : "BA",
+  "Latidude" : "43.915886",
+  "Longitude" : "17.679076"
+}, {
+  "Country" : "Barbados",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BB",
+  "Latidude" : "13.193887",
+  "Longitude" : "-59.543198"
+}, {
+  "Country" : "Bangladesh",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "BD",
+  "Latidude" : "23.684994",
+  "Longitude" : "90.356331"
+}, {
+  "Country" : "Belgium",
+  "Region" : "Europe",
+  "Country (#1)" : "BE",
+  "Latidude" : "50.503887",
+  "Longitude" : "4.469936"
+}, {
+  "Country" : "Burkina Faso",
+  "Region" : "Africa",
+  "Country (#1)" : "BF",
+  "Latidude" : "12.238333",
+  "Longitude" : "-1.561593"
+}, {
+  "Country" : "Bulgaria",
+  "Region" : "Europe",
+  "Country (#1)" : "BG",
+  "Latidude" : "42.733883",
+  "Longitude" : "25.48583"
+}, {
+  "Country" : "Bahrain",
+  "Region" : "Arab States",
+  "Country (#1)" : "BH",
+  "Latidude" : "25.930414",
+  "Longitude" : "50.637772"
+}, {
+  "Country" : "Burundi",
+  "Region" : "Africa",
+  "Country (#1)" : "BI",
+  "Latidude" : "-3.373056",
+  "Longitude" : "29.918886"
+}, {
+  "Country" : "Benin",
+  "Region" : "Africa",
+  "Country (#1)" : "BJ",
+  "Latidude" : "9.30769",
+  "Longitude" : "2.315834"
+}, {
+  "Country" : "Bermuda",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BM",
+  "Latidude" : "32.321384",
+  "Longitude" : "-64.75737"
+}, {
+  "Country" : "Bolivia",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BO",
+  "Latidude" : "-16.290154",
+  "Longitude" : "-63.588653"
+}, {
+  "Country" : "Brazil",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BR",
+  "Latidude" : "-14.235004",
+  "Longitude" : "-51.92528"
+}, {
+  "Country" : "Bahamas",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BS",
+  "Latidude" : "25.03428",
+  "Longitude" : "-77.39628"
+}, {
+  "Country" : "Bhutan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "BT",
+  "Latidude" : "27.514162",
+  "Longitude" : "90.433601"
+}, {
+  "Country" : "Bouvet Island",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BV",
+  "Latidude" : "-54.423199",
+  "Longitude" : "3.413194"
+}, {
+  "Country" : "Botswana",
+  "Region" : "Africa",
+  "Country (#1)" : "BW",
+  "Latidude" : "-22.328474",
+  "Longitude" : "24.684866"
+}, {
+  "Country" : "Belarus",
+  "Region" : "Europe",
+  "Country (#1)" : "BY",
+  "Latidude" : "53.709807",
+  "Longitude" : "27.953389"
+}, {
+  "Country" : "Belize",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "BZ",
+  "Latidude" : "17.189877",
+  "Longitude" : "-88.49765"
+}, {
+  "Country" : "Canada",
+  "Region" : "North America",
+  "Country (#1)" : "CA",
+  "Latidude" : "56.130366",
+  "Longitude" : "-106.346771"
+}, {
+  "Country" : "Central African Republic",
+  "Region" : "Africa",
+  "Country (#1)" : "CF",
+  "Latidude" : "6.611111",
+  "Longitude" : "20.939444"
+}, {
+  "Country" : "Switzerland",
+  "Region" : "Europe",
+  "Country (#1)" : "CH",
+  "Latidude" : "46.818188",
+  "Longitude" : "8.227512"
+}, {
+  "Country" : "Cook Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "CK",
+  "Latidude" : "-21.236736",
+  "Longitude" : "-159.777671"
+}, {
+  "Country" : "Chile",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "CL",
+  "Latidude" : "-35.675147",
+  "Longitude" : "-71.542969"
+}, {
+  "Country" : "Cameroon",
+  "Region" : "Africa",
+  "Country (#1)" : "CM",
+  "Latidude" : "7.369722",
+  "Longitude" : "12.354722"
+}, {
+  "Country" : "China",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "CN",
+  "Latidude" : "35.86166",
+  "Longitude" : "104.195397"
+}, {
+  "Country" : "Colombia",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "CO",
+  "Latidude" : "4.570868",
+  "Longitude" : "-74.297333"
+}, {
+  "Country" : "Costa Rica",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "CR",
+  "Latidude" : "9.748917",
+  "Longitude" : "-83.753428"
+}, {
+  "Country" : "Cuba",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "CU",
+  "Latidude" : "21.521757",
+  "Longitude" : "-77.781167"
+}, {
+  "Country" : "Cape Verde",
+  "Region" : "Africa",
+  "Country (#1)" : "CV",
+  "Latidude" : "16.002082",
+  "Longitude" : "-24.013197"
+}, {
+  "Country" : "Christmas Island",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "CX",
+  "Latidude" : "-10.447525",
+  "Longitude" : "105.690449"
+}, {
+  "Country" : "Cyprus",
+  "Region" : "Europe",
+  "Country (#1)" : "CY",
+  "Latidude" : "35.126413",
+  "Longitude" : "33.429859"
+}, {
+  "Country" : "Czech Republic",
+  "Region" : "Europe",
+  "Country (#1)" : "CZ",
+  "Latidude" : "49.817492",
+  "Longitude" : "15.472962"
+}, {
+  "Country" : "Germany",
+  "Region" : "Europe",
+  "Country (#1)" : "DE",
+  "Latidude" : "51.165691",
+  "Longitude" : "10.451526"
+}, {
+  "Country" : "Djibouti",
+  "Region" : "Arab States",
+  "Country (#1)" : "DJ",
+  "Latidude" : "11.825138",
+  "Longitude" : "42.590275"
+}, {
+  "Country" : "Denmark",
+  "Region" : "Europe",
+  "Country (#1)" : "DK",
+  "Latidude" : "56.26392",
+  "Longitude" : "9.501785"
+}, {
+  "Country" : "Dominica",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "DM",
+  "Latidude" : "15.414999",
+  "Longitude" : "-61.370976"
+}, {
+  "Country" : "Dominican Republic",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "DO",
+  "Latidude" : "18.735693",
+  "Longitude" : "-70.162651"
+}, {
+  "Country" : "Algeria",
+  "Region" : "Arab States",
+  "Country (#1)" : "DZ",
+  "Latidude" : "28.033886",
+  "Longitude" : "1.659626"
+}, {
+  "Country" : "Ecuador",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "EC",
+  "Latidude" : "-1.831239",
+  "Longitude" : "-78.183406"
+}, {
+  "Country" : "Estonia",
+  "Region" : "Europe",
+  "Country (#1)" : "EE",
+  "Latidude" : "58.595272",
+  "Longitude" : "25.013607"
+}, {
+  "Country" : "Egypt",
+  "Region" : "Middle east",
+  "Country (#1)" : "EG",
+  "Latidude" : "26.820553",
+  "Longitude" : "30.802498"
+}, {
+  "Country" : "Western Sahara",
+  "Region" : "Africa",
+  "Country (#1)" : "EH",
+  "Latidude" : "24.215527",
+  "Longitude" : "-12.885834"
+}, {
+  "Country" : "Eritrea",
+  "Region" : "Africa",
+  "Country (#1)" : "ER",
+  "Latidude" : "15.179384",
+  "Longitude" : "39.782334"
+}, {
+  "Country" : "Spain",
+  "Region" : "Europe",
+  "Country (#1)" : "ES",
+  "Latidude" : "40.463667",
+  "Longitude" : "-3.74922"
+}, {
+  "Country" : "Ethiopia",
+  "Region" : "Africa",
+  "Country (#1)" : "ET",
+  "Latidude" : "9.145",
+  "Longitude" : "40.489673"
+}, {
+  "Country" : "Finland",
+  "Region" : "Europe",
+  "Country (#1)" : "FI",
+  "Latidude" : "61.92411",
+  "Longitude" : "25.748151"
+}, {
+  "Country" : "Fiji",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "FJ",
+  "Latidude" : "-16.578193",
+  "Longitude" : "179.414413"
+}, {
+  "Country" : "Faroe Islands",
+  "Region" : "Europe",
+  "Country (#1)" : "FO",
+  "Latidude" : "61.892635",
+  "Longitude" : "-6.911806"
+}, {
+  "Country" : "France",
+  "Region" : "Europe",
+  "Country (#1)" : "FR",
+  "Latidude" : "46.227638",
+  "Longitude" : "2.213749"
+}, {
+  "Country" : "Gabon",
+  "Region" : "Africa",
+  "Country (#1)" : "GA",
+  "Latidude" : "-0.803689",
+  "Longitude" : "11.609444"
+}, {
+  "Country" : "United Kingdom",
+  "Region" : "Europe",
+  "Country (#1)" : "GB",
+  "Latidude" : "55.378051",
+  "Longitude" : "-3.435973"
+}, {
+  "Country" : "Grenada",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GD",
+  "Latidude" : "12.262776",
+  "Longitude" : "-61.604171"
+}, {
+  "Country" : "Georgia",
+  "Region" : "Europe",
+  "Country (#1)" : "GE",
+  "Latidude" : "42.315407",
+  "Longitude" : "43.356892"
+}, {
+  "Country" : "French Guiana",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GF",
+  "Latidude" : "3.933889",
+  "Longitude" : "-53.125782"
+}, {
+  "Country" : "Ghana",
+  "Region" : "Africa",
+  "Country (#1)" : "GH",
+  "Latidude" : "7.946527",
+  "Longitude" : "-1.023194"
+}, {
+  "Country" : "Gibraltar",
+  "Region" : "Europe",
+  "Country (#1)" : "GI",
+  "Latidude" : "36.137741",
+  "Longitude" : "-5.345374"
+}, {
+  "Country" : "Greenland",
+  "Region" : "Europe",
+  "Country (#1)" : "GL",
+  "Latidude" : "71.706936",
+  "Longitude" : "-42.604303"
+}, {
+  "Country" : "Gambia",
+  "Region" : "Africa",
+  "Country (#1)" : "GM",
+  "Latidude" : "13.443182",
+  "Longitude" : "-15.310139"
+}, {
+  "Country" : "Guinea",
+  "Region" : "Africa",
+  "Country (#1)" : "GN",
+  "Latidude" : "9.945587",
+  "Longitude" : "-9.696645"
+}, {
+  "Country" : "Guadeloupe",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GP",
+  "Latidude" : "16.995971",
+  "Longitude" : "-62.067641"
+}, {
+  "Country" : "Equatorial Guinea",
+  "Region" : "Africa",
+  "Country (#1)" : "GQ",
+  "Latidude" : "1.650801",
+  "Longitude" : "10.267895"
+}, {
+  "Country" : "Greece",
+  "Region" : "Europe",
+  "Country (#1)" : "GR",
+  "Latidude" : "39.074208",
+  "Longitude" : "21.824312"
+}, {
+  "Country" : "South Georgia and the South Sandwich Islands",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GS",
+  "Latidude" : "-54.429579",
+  "Longitude" : "-36.587909"
+}, {
+  "Country" : "Guatemala",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GT",
+  "Latidude" : "15.783471",
+  "Longitude" : "-90.230759"
+}, {
+  "Country" : "Guam",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "GU",
+  "Latidude" : "13.444304",
+  "Longitude" : "144.793731"
+}, {
+  "Country" : "Guinea-Bissau",
+  "Region" : "Africa",
+  "Country (#1)" : "GW",
+  "Latidude" : "11.803749",
+  "Longitude" : "-15.180413"
+}, {
+  "Country" : "Guyana",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "GY",
+  "Latidude" : "4.860416",
+  "Longitude" : "-58.93018"
+}, {
+  "Country" : "Hong Kong",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "HK",
+  "Latidude" : "22.396428",
+  "Longitude" : "114.109497"
+}, {
+  "Country" : "Heard Island and McDonald Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "HM",
+  "Latidude" : "-53.08181",
+  "Longitude" : "73.504158"
+}, {
+  "Country" : "Honduras",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "HN",
+  "Latidude" : "15.199999",
+  "Longitude" : "-86.241905"
+}, {
+  "Country" : "Croatia",
+  "Region" : "Europe",
+  "Country (#1)" : "HR",
+  "Latidude" : "45.1",
+  "Longitude" : "15.2"
+}, {
+  "Country" : "Haiti",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "HT",
+  "Latidude" : "18.971187",
+  "Longitude" : "-72.285215"
+}, {
+  "Country" : "Hungary",
+  "Region" : "Europe",
+  "Country (#1)" : "HU",
+  "Latidude" : "47.162494",
+  "Longitude" : "19.503304"
+}, {
+  "Country" : "Indonesia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "ID",
+  "Latidude" : "-0.789275",
+  "Longitude" : "113.921327"
+}, {
+  "Country" : "Ireland",
+  "Region" : "Europe",
+  "Country (#1)" : "IE",
+  "Latidude" : "53.41291",
+  "Longitude" : "-8.24389"
+}, {
+  "Country" : "Israel",
+  "Region" : "Europe",
+  "Country (#1)" : "IL",
+  "Latidude" : "31.046051",
+  "Longitude" : "34.851612"
+}, {
+  "Country" : "India",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "IN",
+  "Latidude" : "20.593684",
+  "Longitude" : "78.96288"
+}, {
+  "Country" : "British Indian Ocean Territory",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "IO",
+  "Latidude" : "-6.343194",
+  "Longitude" : "71.876519"
+}, {
+  "Country" : "Iraq",
+  "Region" : "Middle east",
+  "Country (#1)" : "IQ",
+  "Latidude" : "33.223191",
+  "Longitude" : "43.679291"
+}, {
+  "Country" : "Iceland",
+  "Region" : "Europe",
+  "Country (#1)" : "IS",
+  "Latidude" : "64.963051",
+  "Longitude" : "-19.020835"
+}, {
+  "Country" : "Italy",
+  "Region" : "Europe",
+  "Country (#1)" : "IT",
+  "Latidude" : "41.87194",
+  "Longitude" : "12.56738"
+}, {
+  "Country" : "Jamaica",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "JM",
+  "Latidude" : "18.109581",
+  "Longitude" : "-77.297508"
+}, {
+  "Country" : "Jordan",
+  "Region" : "Middle east",
+  "Country (#1)" : "JO",
+  "Latidude" : "30.585164",
+  "Longitude" : "36.238414"
+}, {
+  "Country" : "Japan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "JP",
+  "Latidude" : "36.204824",
+  "Longitude" : "138.252924"
+}, {
+  "Country" : "Kenya",
+  "Region" : "Africa",
+  "Country (#1)" : "KE",
+  "Latidude" : "-0.023559",
+  "Longitude" : "37.906193"
+}, {
+  "Country" : "Kyrgyzstan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KG",
+  "Latidude" : "41.20438",
+  "Longitude" : "74.766098"
+}, {
+  "Country" : "Cambodia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KH",
+  "Latidude" : "12.565679",
+  "Longitude" : "104.990963"
+}, {
+  "Country" : "Kiribati",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KI",
+  "Latidude" : "-3.370417",
+  "Longitude" : "-168.734039"
+}, {
+  "Country" : "Comoros",
+  "Region" : "Arab States",
+  "Country (#1)" : "KM",
+  "Latidude" : "-11.875001",
+  "Longitude" : "43.872219"
+}, {
+  "Country" : "Saint Kitts and Nevis",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "KN",
+  "Latidude" : "17.357822",
+  "Longitude" : "-62.782998"
+}, {
+  "Country" : "Kuwait",
+  "Region" : "Middle east",
+  "Country (#1)" : "KW",
+  "Latidude" : "29.31166",
+  "Longitude" : "47.481766"
+}, {
+  "Country" : "Cayman Islands",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "KY",
+  "Latidude" : "19.513469",
+  "Longitude" : "-80.566956"
+}, {
+  "Country" : "Kazakhstan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KZ",
+  "Latidude" : "48.019573",
+  "Longitude" : "66.923684"
+}, {
+  "Country" : "Lebanon",
+  "Region" : "Middle east",
+  "Country (#1)" : "LB",
+  "Latidude" : "33.854721",
+  "Longitude" : "35.862285"
+}, {
+  "Country" : "Saint Lucia",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "LC",
+  "Latidude" : "13.909444",
+  "Longitude" : "-60.978893"
+}, {
+  "Country" : "Liechtenstein",
+  "Region" : "Europe",
+  "Country (#1)" : "LI",
+  "Latidude" : "47.166",
+  "Longitude" : "9.555373"
+}, {
+  "Country" : "Sri Lanka",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "LK",
+  "Latidude" : "7.873054",
+  "Longitude" : "80.771797"
+}, {
+  "Country" : "Liberia",
+  "Region" : "Africa",
+  "Country (#1)" : "LR",
+  "Latidude" : "6.428055",
+  "Longitude" : "-9.429499"
+}, {
+  "Country" : "Lesotho",
+  "Region" : "Africa",
+  "Country (#1)" : "LS",
+  "Latidude" : "-29.609988",
+  "Longitude" : "28.233608"
+}, {
+  "Country" : "Lithuania",
+  "Region" : "Europe",
+  "Country (#1)" : "LT",
+  "Latidude" : "55.169438",
+  "Longitude" : "23.881275"
+}, {
+  "Country" : "Luxembourg",
+  "Region" : "Europe",
+  "Country (#1)" : "LU",
+  "Latidude" : "49.815273",
+  "Longitude" : "6.129583"
+}, {
+  "Country" : "Latvia",
+  "Region" : "Europe",
+  "Country (#1)" : "LV",
+  "Latidude" : "56.879635",
+  "Longitude" : "24.603189"
+}, {
+  "Country" : "Libya",
+  "Region" : "Middle east",
+  "Country (#1)" : "LY",
+  "Latidude" : "26.3351",
+  "Longitude" : "17.228331"
+}, {
+  "Country" : "Morocco",
+  "Region" : "Arab States",
+  "Country (#1)" : "MA",
+  "Latidude" : "31.791702",
+  "Longitude" : "-7.09262"
+}, {
+  "Country" : "Monaco",
+  "Region" : "Europe",
+  "Country (#1)" : "MC",
+  "Latidude" : "43.750298",
+  "Longitude" : "7.412841"
+}, {
+  "Country" : "Madagascar",
+  "Region" : "Africa",
+  "Country (#1)" : "MG",
+  "Latidude" : "-18.766947",
+  "Longitude" : "46.869107"
+}, {
+  "Country" : "Marshall Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MH",
+  "Latidude" : "7.131474",
+  "Longitude" : "171.184478"
+}, {
+  "Country" : "Mali",
+  "Region" : "Africa",
+  "Country (#1)" : "ML",
+  "Latidude" : "17.570692",
+  "Longitude" : "-3.996166"
+}, {
+  "Country" : "Mongolia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MN",
+  "Latidude" : "46.862496",
+  "Longitude" : "103.846656"
+}, {
+  "Country" : "Macau",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MO",
+  "Latidude" : "22.198745",
+  "Longitude" : "113.543873"
+}, {
+  "Country" : "Northern Mariana Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MP",
+  "Latidude" : "17.33083",
+  "Longitude" : "145.38469"
+}, {
+  "Country" : "Martinique",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "MQ",
+  "Latidude" : "14.641528",
+  "Longitude" : "-61.024174"
+}, {
+  "Country" : "Mauritania",
+  "Region" : "Arab States",
+  "Country (#1)" : "MR",
+  "Latidude" : "21.00789",
+  "Longitude" : "-10.940835"
+}, {
+  "Country" : "Scotland",
+  "Region" : "Europe",
+  "Country (#1)" : "",
+  "Latidude" : "56.4907",
+  "Longitude" : "4.2026"
+}, {
+  "Country" : "Montserrat",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "MS",
+  "Latidude" : "16.742498",
+  "Longitude" : "-62.187366"
+}, {
+  "Country" : "Malta",
+  "Region" : "Europe",
+  "Country (#1)" : "MT",
+  "Latidude" : "35.937496",
+  "Longitude" : "14.375416"
+}, {
+  "Country" : "Mauritius",
+  "Region" : "Africa",
+  "Country (#1)" : "MU",
+  "Latidude" : "-20.348404",
+  "Longitude" : "57.552152"
+}, {
+  "Country" : "Maldives",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MV",
+  "Latidude" : "3.202778",
+  "Longitude" : "73.22068"
+}, {
+  "Country" : "Malawi",
+  "Region" : "Africa",
+  "Country (#1)" : "MW",
+  "Latidude" : "-13.254308",
+  "Longitude" : "34.301525"
+}, {
+  "Country" : "Mexico",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "MX",
+  "Latidude" : "23.634501",
+  "Longitude" : "-102.552784"
+}, {
+  "Country" : "Malaysia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "MY",
+  "Latidude" : "4.210484",
+  "Longitude" : "101.975766"
+}, {
+  "Country" : "Mozambique",
+  "Region" : "Africa",
+  "Country (#1)" : "MZ",
+  "Latidude" : "-18.665695",
+  "Longitude" : "35.529562"
+}, {
+  "Country" : "Namibia",
+  "Region" : "Africa",
+  "Country (#1)" : "NA",
+  "Latidude" : "-22.95764",
+  "Longitude" : "18.49041"
+}, {
+  "Country" : "New Caledonia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NC",
+  "Latidude" : "-20.904305",
+  "Longitude" : "165.618042"
+}, {
+  "Country" : "Niger",
+  "Region" : "Africa",
+  "Country (#1)" : "NE",
+  "Latidude" : "17.607789",
+  "Longitude" : "8.081666"
+}, {
+  "Country" : "Norfolk Island",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NF",
+  "Latidude" : "-29.040835",
+  "Longitude" : "167.954712"
+}, {
+  "Country" : "Nigeria",
+  "Region" : "Africa",
+  "Country (#1)" : "NG",
+  "Latidude" : "9.081999",
+  "Longitude" : "8.675277"
+}, {
+  "Country" : "Nicaragua",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "NI",
+  "Latidude" : "12.865416",
+  "Longitude" : "-85.207229"
+}, {
+  "Country" : "Netherlands",
+  "Region" : "Europe",
+  "Country (#1)" : "NL",
+  "Latidude" : "52.132633",
+  "Longitude" : "5.291266"
+}, {
+  "Country" : "Norway",
+  "Region" : "Europe",
+  "Country (#1)" : "NO",
+  "Latidude" : "60.472024",
+  "Longitude" : "8.468946"
+}, {
+  "Country" : "Nepal",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NP",
+  "Latidude" : "28.394857",
+  "Longitude" : "84.124008"
+}, {
+  "Country" : "Nauru",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NR",
+  "Latidude" : "-0.522778",
+  "Longitude" : "166.931503"
+}, {
+  "Country" : "Niue",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NU",
+  "Latidude" : "-19.054445",
+  "Longitude" : "-169.867233"
+}, {
+  "Country" : "New Zealand",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "NZ",
+  "Latidude" : "-40.900557",
+  "Longitude" : "174.885971"
+}, {
+  "Country" : "Oman",
+  "Region" : "Middle east",
+  "Country (#1)" : "OM",
+  "Latidude" : "21.512583",
+  "Longitude" : "55.923255"
+}, {
+  "Country" : "Panama",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "PA",
+  "Latidude" : "8.537981",
+  "Longitude" : "-80.782127"
+}, {
+  "Country" : "Peru",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "PE",
+  "Latidude" : "-9.189967",
+  "Longitude" : "-75.015152"
+}, {
+  "Country" : "French Polynesia",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PF",
+  "Latidude" : "-17.679742",
+  "Longitude" : "-149.406843"
+}, {
+  "Country" : "Papua New Guinea",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PG",
+  "Latidude" : "-6.314993",
+  "Longitude" : "143.95555"
+}, {
+  "Country" : "Philippines",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PH",
+  "Latidude" : "12.879721",
+  "Longitude" : "121.774017"
+}, {
+  "Country" : "Pakistan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PK",
+  "Latidude" : "30.375321",
+  "Longitude" : "69.345116"
+}, {
+  "Country" : "Poland",
+  "Region" : "Europe",
+  "Country (#1)" : "PL",
+  "Latidude" : "51.919438",
+  "Longitude" : "19.145136"
+}, {
+  "Country" : "Saint Pierre and Miquelon",
+  "Region" : "North America",
+  "Country (#1)" : "PM",
+  "Latidude" : "46.941936",
+  "Longitude" : "-56.27111"
+}, {
+  "Country" : "Pitcairn Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PN",
+  "Latidude" : "-24.703615",
+  "Longitude" : "-127.439308"
+}, {
+  "Country" : "Puerto Rico",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "PR",
+  "Latidude" : "18.220833",
+  "Longitude" : "-66.590149"
+}, {
+  "Country" : "Portugal",
+  "Region" : "Europe",
+  "Country (#1)" : "PT",
+  "Latidude" : "39.399872",
+  "Longitude" : "-8.224454"
+}, {
+  "Country" : "Palau",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "PW",
+  "Latidude" : "7.51498",
+  "Longitude" : "134.58252"
+}, {
+  "Country" : "Paraguay",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "PY",
+  "Latidude" : "-23.442503",
+  "Longitude" : "-58.443832"
+}, {
+  "Country" : "Qatar",
+  "Region" : "Middle east",
+  "Country (#1)" : "QA",
+  "Latidude" : "25.354826",
+  "Longitude" : "51.183884"
+}, {
+  "Country" : "Romania",
+  "Region" : "Europe",
+  "Country (#1)" : "RO",
+  "Latidude" : "45.943161",
+  "Longitude" : "24.96676"
+}, {
+  "Country" : "Rwanda",
+  "Region" : "Africa",
+  "Country (#1)" : "RW",
+  "Latidude" : "-1.940278",
+  "Longitude" : "29.873888"
+}, {
+  "Country" : "Saudi Arabia",
+  "Region" : "Middle east",
+  "Country (#1)" : "SA",
+  "Latidude" : "23.885942",
+  "Longitude" : "45.079162"
+}, {
+  "Country" : "Solomon Islands",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "SB",
+  "Latidude" : "-9.64571",
+  "Longitude" : "160.156194"
+}, {
+  "Country" : "Seychelles",
+  "Region" : "Africa",
+  "Country (#1)" : "SC",
+  "Latidude" : "-4.679574",
+  "Longitude" : "55.491977"
+}, {
+  "Country" : "Sudan",
+  "Region" : "Arab States",
+  "Country (#1)" : "SD",
+  "Latidude" : "12.862807",
+  "Longitude" : "30.217636"
+}, {
+  "Country" : "Sweden",
+  "Region" : "Europe",
+  "Country (#1)" : "SE",
+  "Latidude" : "60.128161",
+  "Longitude" : "18.643501"
+}, {
+  "Country" : "Singapore",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "SG",
+  "Latidude" : "1.352083",
+  "Longitude" : "103.819836"
+}, {
+  "Country" : "Saint Helena",
+  "Region" : "Africa",
+  "Country (#1)" : "SH",
+  "Latidude" : "-24.143474",
+  "Longitude" : "-10.030696"
+}, {
+  "Country" : "Slovenia",
+  "Region" : "Europe",
+  "Country (#1)" : "SI",
+  "Latidude" : "46.151241",
+  "Longitude" : "14.995463"
+}, {
+  "Country" : "Svalbard and Jan Mayen",
+  "Region" : "Europe",
+  "Country (#1)" : "SJ",
+  "Latidude" : "77.553604",
+  "Longitude" : "23.670272"
+}, {
+  "Country" : "Slovakia",
+  "Region" : "Europe",
+  "Country (#1)" : "SK",
+  "Latidude" : "48.669026",
+  "Longitude" : "19.699024"
+}, {
+  "Country" : "Sierra Leone",
+  "Region" : "Africa",
+  "Country (#1)" : "SL",
+  "Latidude" : "8.460555",
+  "Longitude" : "-11.779889"
+}, {
+  "Country" : "San Marino",
+  "Region" : "Europe",
+  "Country (#1)" : "SM",
+  "Latidude" : "43.94236",
+  "Longitude" : "12.457777"
+}, {
+  "Country" : "Senegal",
+  "Region" : "Africa",
+  "Country (#1)" : "SN",
+  "Latidude" : "14.497401",
+  "Longitude" : "-14.452362"
+}, {
+  "Country" : "Somalia",
+  "Region" : "Arab States",
+  "Country (#1)" : "SO",
+  "Latidude" : "5.152149",
+  "Longitude" : "46.199616"
+}, {
+  "Country" : "Suriname",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "SR",
+  "Latidude" : "3.919305",
+  "Longitude" : "-56.027783"
+}, {
+  "Country" : "El Salvador",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "SV",
+  "Latidude" : "13.794185",
+  "Longitude" : "-88.89653"
+}, {
+  "Country" : "Swaziland",
+  "Region" : "Africa",
+  "Country (#1)" : "SZ",
+  "Latidude" : "-26.522503",
+  "Longitude" : "31.465866"
+}, {
+  "Country" : "Turks and Caicos Islands",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "TC",
+  "Latidude" : "21.694025",
+  "Longitude" : "-71.797928"
+}, {
+  "Country" : "Chad",
+  "Region" : "Africa",
+  "Country (#1)" : "TD",
+  "Latidude" : "15.454166",
+  "Longitude" : "18.732207"
+}, {
+  "Country" : "French Southern Territories",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TF",
+  "Latidude" : "-49.280366",
+  "Longitude" : "69.348557"
+}, {
+  "Country" : "Togo",
+  "Region" : "Africa",
+  "Country (#1)" : "TG",
+  "Latidude" : "8.619543",
+  "Longitude" : "0.824782"
+}, {
+  "Country" : "Thailand",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TH",
+  "Latidude" : "15.870032",
+  "Longitude" : "100.992541"
+}, {
+  "Country" : "Tajikistan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TJ",
+  "Latidude" : "38.861034",
+  "Longitude" : "71.276093"
+}, {
+  "Country" : "Tokelau",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TK",
+  "Latidude" : "-8.967363",
+  "Longitude" : "-171.855881"
+}, {
+  "Country" : "Turkmenistan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TM",
+  "Latidude" : "38.969719",
+  "Longitude" : "59.556278"
+}, {
+  "Country" : "Tunisia",
+  "Region" : "Arab States",
+  "Country (#1)" : "TN",
+  "Latidude" : "33.886917",
+  "Longitude" : "9.537499"
+}, {
+  "Country" : "Tonga",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TO",
+  "Latidude" : "-21.178986",
+  "Longitude" : "-175.198242"
+}, {
+  "Country" : "Timor-Leste",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TL",
+  "Latidude" : "-8.874217",
+  "Longitude" : "125.727539"
+}, {
+  "Country" : "Turkey",
+  "Region" : "Europe",
+  "Country (#1)" : "TR",
+  "Latidude" : "38.963745",
+  "Longitude" : "35.243322"
+}, {
+  "Country" : "Trinidad and Tobago",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "TT",
+  "Latidude" : "10.691803",
+  "Longitude" : "-61.222503"
+}, {
+  "Country" : "Tuvalu",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TV",
+  "Latidude" : "-7.109535",
+  "Longitude" : "177.64933"
+}, {
+  "Country" : "Taiwan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "TW",
+  "Latidude" : "23.69781",
+  "Longitude" : "120.960515"
+}, {
+  "Country" : "Ukraine",
+  "Region" : "Europe",
+  "Country (#1)" : "UA",
+  "Latidude" : "48.379433",
+  "Longitude" : "31.16558"
+}, {
+  "Country" : "Uganda",
+  "Region" : "Africa",
+  "Country (#1)" : "UG",
+  "Latidude" : "1.373333",
+  "Longitude" : "32.290275"
+}, {
+  "Country" : "United States",
+  "Region" : "North America",
+  "Country (#1)" : "US",
+  "Latidude" : "37.09024",
+  "Longitude" : "-95.712891"
+}, {
+  "Country" : "Uruguay",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "UY",
+  "Latidude" : "-32.522779",
+  "Longitude" : "-55.765835"
+}, {
+  "Country" : "Uzbekistan",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "UZ",
+  "Latidude" : "41.377491",
+  "Longitude" : "64.585262"
+}, {
+  "Country" : "Saint Vincent and the Grenadines",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "VC",
+  "Latidude" : "12.984305",
+  "Longitude" : "-61.287228"
+}, {
+  "Country" : "Venezuela",
+  "Region" : "South/Latin America",
+  "Country (#1)" : "VE",
+  "Latidude" : "6.42375",
+  "Longitude" : "-66.58973"
+}, {
+  "Country" : "Vietnam",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "VN",
+  "Latidude" : "14.058324",
+  "Longitude" : "108.277199"
+}, {
+  "Country" : "Vanuatu",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "VU",
+  "Latidude" : "-15.376706",
+  "Longitude" : "166.959158"
+}, {
+  "Country" : "Wallis and Futuna",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "WF",
+  "Latidude" : "-13.768752",
+  "Longitude" : "-177.156097"
+}, {
+  "Country" : "Samoa",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "WS",
+  "Latidude" : "-13.759029",
+  "Longitude" : "-172.104629"
+}, {
+  "Country" : "Yemen",
+  "Region" : "Middle east",
+  "Country (#1)" : "YE",
+  "Latidude" : "15.552727",
+  "Longitude" : "48.516388"
+}, {
+  "Country" : "Mayotte",
+  "Region" : "Africa",
+  "Country (#1)" : "YT",
+  "Latidude" : "-12.8275",
+  "Longitude" : "45.166244"
+}, {
+  "Country" : "Serbia",
+  "Region" : "Europe",
+  "Country (#1)" : "RS",
+  "Latidude" : "44.016521",
+  "Longitude" : "21.005859"
+}, {
+  "Country" : "South Africa",
+  "Region" : "Africa",
+  "Country (#1)" : "ZA",
+  "Latidude" : "-30.559482",
+  "Longitude" : "22.937506"
+}, {
+  "Country" : "Zambia",
+  "Region" : "Africa",
+  "Country (#1)" : "ZM",
+  "Latidude" : "-13.133897",
+  "Longitude" : "27.849332"
+}, {
+  "Country" : "Montenegro",
+  "Region" : "Europe",
+  "Country (#1)" : "ME",
+  "Latidude" : "42.708678",
+  "Longitude" : "19.37439"
+}, {
+  "Country" : "Zimbabwe",
+  "Region" : "Africa",
+  "Country (#1)" : "ZW",
+  "Latidude" : "-19.015438",
+  "Longitude" : "29.154857"
+}, {
+  "Country" : "Guernsey",
+  "Region" : "Europe",
+  "Country (#1)" : "GG",
+  "Latidude" : "49.465691",
+  "Longitude" : "-2.585278"
+}, {
+  "Country" : "Isle of Man",
+  "Region" : "Europe",
+  "Country (#1)" : "IM",
+  "Latidude" : "54.236107",
+  "Longitude" : "-4.548056"
+}, {
+  "Country" : "Jersey",
+  "Region" : "Europe",
+  "Country (#1)" : "JE",
+  "Latidude" : "49.214439",
+  "Longitude" : "-2.13125"
+}, {
+  "Country" : "Korea",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KR",
+  "Latidude" : "35.907757",
+  "Longitude" : "127.766922"
+}, {
+  "Country" : "USA",
+  "Region" : "North America",
+  "Country (#1)" : "US",
+  "Latidude" : "37.09024",
+  "Longitude" : "-95.712891"
+}, {
+  "Country" : "Republic of Korea",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "KR",
+  "Latidude" : "35.907757",
+  "Longitude" : "127.766922"
+}, {
+  "Country" : "People's Republic of China",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "CN",
+  "Latidude" : "35.86166",
+  "Longitude" : "104.195397"
+} ]
