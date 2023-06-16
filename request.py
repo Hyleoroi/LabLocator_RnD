@@ -2,27 +2,22 @@ import os
 import json
 
 class Request:
-    def __init__(self, req_id: str, query: str, abstract: str, region_of_interest: str, request_person: str,
-                 from_date: int = 1):
-        self.req_id = str(req_id)
+    def __init__(self, input_dict, query):
+        self.req_id = str(input_dict.get('req_id', ''))
         self.query = str(query)
-        self.abstract = str(abstract)
-        self.region_of_interest = str(region_of_interest)
-        self.request_person = str(request_person)
-        self.from_date = int(from_date)
+        self.abstract = str(input_dict.get('abstract', ''))
+        self.region_of_interest = str(input_dict.get('region_of_interest', ''))
+        self.request_person = str(input_dict.get('request_person', ''))
+        self.from_date = int(input_dict.get('from_date', 1))
 
-    def keywords_to_query(*argv: str):
+    # i think this function is easier
+    def keywords_to_query(keywords):
         """
         Specific query request generator for https://pubmed.ncbi.nlm.nih.gov/.
         It combines all keywords into one query string that can be used on pubmed site via RestAPI.
-        :param argv: Keyword/sentence
-        :return: query usable for pubmed, build from combination of all keywords/sentences.
+        :param args: List of keywords or sentences
+        :return: Query usable for pubmed, built from the combination of all keywords/sentences.
         """
-        query = ''
-        for arg in argv:
-            if not str(arg) == '':
-                if query == '':
-                    query = str(arg)
-                else:
-                    query = query + " AND " + str(arg)
+        query = ' AND '.join(keywords)
         return query
+
