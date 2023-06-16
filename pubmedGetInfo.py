@@ -9,7 +9,7 @@ import xml.etree.cElementTree as ET
 from request import Request
 from author import Author
 from pubmedarticle import PubmedArticle
-from LabLocatorTimer import measure_time
+from lablocatortimer import measure_time
 from statisticsLabLocator import articlecount_per_region
 
 @measure_time
@@ -27,7 +27,7 @@ def get_useful_pubmed_info(request: Request):
 
     # TODO: @Marcello Admin value of the app (max items), if not possible to change in the app we change it via Gitpush?
     @measure_time
-    def get_all_pubmed_ids(query, max_items=200):
+    def get_all_pubmed_ids(query, max_items=10000):
         """
         Generate a GET request for pubmed id's and send to the client
         :param query: basic keyword query
@@ -80,6 +80,7 @@ def get_useful_pubmed_info(request: Request):
         rettype = 'abstract'
 
         # max 3 request per second on Pubmed. Include random sleep to prevent blockage of IP address.
+        #TODO: @Marcello: Do you think it's smart to ask a API key from pubmed? Or do we await the usage of the app to check the traffic load? https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
         sleep_time = random.uniform(1, 3)
         time.sleep(sleep_time)
 

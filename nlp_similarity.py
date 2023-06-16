@@ -3,7 +3,7 @@ from request import Request
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from typing import List
-from LabLocatorTimer import measure_time
+from lablocatortimer import measure_time
 
 import pandas as pd
 
