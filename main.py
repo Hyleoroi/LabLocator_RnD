@@ -1,6 +1,6 @@
 from request import Request
 from pubmedGetInfo import get_useful_pubmed_info
-
+import pandas as pd
 import nlp_similarity
 from lablocatortimer import calculate_running_time
 
@@ -13,7 +13,7 @@ FIRST_ABSTRACT = """Dynamic mechanical loading increases bone density and streng
 
 INPUTPARAMS = {
     'abstract' : FIRST_ABSTRACT,
-    'regtion' : 'Europe',
+    'region_of_interest' : 'Europe',
     'req_id' : '1',
     'request_person' : 'Robin Vandercruyssen',
     'keywords' : KEYWORDS
@@ -22,12 +22,36 @@ INPUTPARAMS = {
 def main(keywords, inputparams):
 
     querystring = Request.keywords_to_query(inputparams['keywords'])
+    print(querystring)
     request = Request(inputparams, querystring)
-    articles_in_roi, statistics1 = get_useful_pubmed_info(request)
-    result_table, statistics2 = nlp_similarity.cosine_similarity_algorithme(articles_in_roi, request)
-    statistics3 = calculate_running_time()
-    #TODO: @Marcello these are the output data i want to show to the user. It containes diffrent types of data structures. We can sit toghether to talk how we best manage to arrange the output.
-    output = request, result_table, statistics1, statistics2, statistics3
+    print(request.__dict__)
+    print(request.region_of_interest)
+    articles_in_roi, article_count_per_region = get_useful_pubmed_info(request)
+    print(articles_in_roi)
+    print(article_count_per_region)
+    result_table, similarities = nlp_similarity.cosine_similarity_algorithme(articles_in_roi, request)
+    print(result_table)
+    print(similarities)
+    functions_timing = calculate_running_time()
+    print(functions_timing)
+    pmids = [article.pmid for article in articles_in_roi]
+    countries = [article.last_author.country for article in articles_in_roi]
+    abstracts = [article.abstract for article in articles_in_roi]
+    authors_names = [article.last_author.fullname for article in articles_in_roi]
+    affiliations = [article.last_author.affiliation for article in articles_in_roi]
+    output = request, result_table, article_count_per_region, similarities, functions_timing # let's discuss the usage of these outputs
+    result_df = pd.DataFrame({
+        'Pubmed ID' : pmids,
+        'Similarity' : similarities,
+        'Country' : countries,
+        'Abstract' : abstracts,
+        'Author name' : authors_names,
+        'Affiliation' : affiliations
+    })
+    # outputs should be saved somewhere as a csv file
+    return result_df
 
 if __name__ == "__main__":
-    main(KEYWORDS,INPUTPARAMS)
+    result_df = main(KEYWORDS,INPUTPARAMS)
+
+    print(result_df)
