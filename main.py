@@ -1,8 +1,11 @@
+import statisticsLabLocator
 from request import Request
 from pubmedGetInfo import get_useful_pubmed_info
 import pandas as pd
 import nlp_similarity
 from lablocatortimer import calculate_running_time
+from ReportGenerator.pdfGenerator import generate_pdf_report
+
 
 # inputs should be defined outside, like a json file
 KEYWORDS = ["Virus", "stress", "reduction"]
@@ -31,7 +34,14 @@ def main(keywords, inputparams):
     abstracts = [article.abstract for article in articles_in_roi]
     authors_names = [article.last_author.fullname for article in articles_in_roi]
     affiliations = [article.last_author.affiliation for article in articles_in_roi]
+    statistics_image = statisticsLabLocator.generate_collection_statics_image(article_count_per_region, similarities, functions_timing)
 
+    #Generate a pdf report, everyting is located in .ReportGenerator
+    #TODO: @Marcello, this is the final report that needs to be send to the user. The name is a varialbel (request id) Now it is stored in the main folder but this needs to be saved in Sharepoint
+    generate_pdf_report(request, result_table, statistics_image)
+
+
+    #TODO: Is this still needed?
     output = request, result_table, article_count_per_region, similarities, functions_timing # let's discuss the usage of these outputs
 
     result_df = pd.DataFrame({
@@ -42,8 +52,11 @@ def main(keywords, inputparams):
         'Author name' : authors_names,
         'Affiliation' : affiliations
     })
-    # outputs should be saved somewhere as a csv file
     return result_df
+
+
+
+
 
 if __name__ == "__main__":
     result_df = main(KEYWORDS,INPUTPARAMS)

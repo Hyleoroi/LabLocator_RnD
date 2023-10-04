@@ -25,6 +25,7 @@ def get_useful_pubmed_info(request: Request):
     articlesinfo = []
     articles_in_roi = []
 
+    # TODO: chhange max items to 10000
     # TODO: @Marcello Admin value of the app (max items), if not possible to change in the app we change it via Gitpush?
     @measure_time
     def get_all_pubmed_ids(query, max_items=10000):
@@ -46,7 +47,11 @@ def get_useful_pubmed_info(request: Request):
         try:
             get_request_url = f'{domain}/esearch.fcgi?db={db}&retmax={max_items}&retmode={retmode}&rettype={rettype}&term={query}'
             respons = requests.get(get_request_url).json()
-            return respons["esearchresult"]["idlist"]
+            if not respons["esearchresult"]["idlist"]:
+                #TODO: @Marcello this is an error when the query is to complex and it returns 0 items. We need to capture this as a results to the client.
+                raise ValueError("Pubmed: no results were found try other query request")
+            else:
+                return respons["esearchresult"]["idlist"]
         except requests.exceptions.RequestException as e:
             logging.exception(e, ": Something wrong with the connection from or to pubmed")
             # TODO: @Marcello is it necessary to exit the script if there is an error that interupts the complete flow else return none?

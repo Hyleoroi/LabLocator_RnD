@@ -1,0 +1,51 @@
+{
+    "font" : "Helvetica",
+    "font_size" : 10,
+    "font_style" : "",
+    "font_color" : 0,
+    "fill_color1" : [219, 236, 220],
+    "draw_color1" : [38, 106, 46],
+    "fill_color2" : [38, 106, 40],
+
+    "header": {
+        "font_size" : 10,
+        "font_style" : "",
+        "company" : "Nuscience Belgium NV",
+        "street" : "Booiebos 5",
+        "city" : "B-9031 (Gent) Drongen",
+        "homepage" : "www.nuscience.eu",
+        "url_homepag" : "https://www.nuscience.eu/nl-be/",
+        "phone" : "T +32 (0)9 280 29 00",
+        "fax" : "F +32 (0)9 282 00 27",
+        "mailadress" : "info@nusciencegroup.com"
+    },
+    "footer": {
+        "font_size": 8,
+        "font_style": "",
+        "footer_note": "Nutrition Sciences NV | RPR Gent | VAT BE 0464.648.806 | KBC bank NV EUR IBAN BE28 7330 0845 7420 |BIC KREDBEBB"
+    },
+    "front_page": {
+        "titel": {
+            "text" : "LITERATURE SEARCH TOOL",
+            "font_size" : 24,
+            "font_style" : "B"
+        },
+        "report_info": {
+            "font_size" : 11,
+            "font_style" : ""
+        }
+    },
+    "title1": {
+        "font_size" : 20,
+        "font_style" : "B",
+        "font_color" : 0
+    },
+    "table": {
+        "font_size" : 8,
+        "title_style" : "B",
+        "text_style": "",
+        "title_fill_color" : [121, 185, 126],
+        "row_fill_color" : [219, 236, 220],
+        "font_color" : [51,102,153]
+    }
+}
