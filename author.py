@@ -3,8 +3,8 @@ import re
 
 class Author:
     def __init__(self, fullname: str, affiliation: str):
-        self.fullname = str(fullname)
-        self.affiliation = str(affiliation)
+        self.fullname = str(fullname).encode('latin-1', 'replace').decode('latin-1')
+        self.affiliation = str(affiliation).encode('latin-1', 'replace').decode('latin-1')
         self.country, self.region = self.find_location_author(affiliation)
         self.email = self.find_email_author(affiliation)
 
