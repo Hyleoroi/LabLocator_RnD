@@ -81,4 +81,4 @@ def generate_pdf_report(request: Request, result_table: List[PubmedArticle],stat
     generate_resultpage(pdf,result_table,config)
     generate_statistics(pdf, statistics_image)
 
-    pdf.output(request.req_id)
+    pdf.output(request.req_id+".pdf")
