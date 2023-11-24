@@ -11,6 +11,8 @@ from ReportGenerator.ReportPages.input_page import generate_inputpage
 from ReportGenerator.ReportPages.results_page import generate_resultpage
 from ReportGenerator.ReportPages.statistics_page import generate_statistics
 
+from agrifirm_databricks_core.sharepoint.sharepoint_uploader import SharepointUploader
+
 def read_config(config_file):
     with open(config_file, 'r') as f:
         config = json.load(f)
@@ -80,5 +82,9 @@ def generate_pdf_report(request: Request, result_table: List[PubmedArticle],stat
     generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
     generate_resultpage(pdf,result_table,config)
     generate_statistics(pdf, statistics_image)
-
-    pdf.output(request.req_id)
+    
+    datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
+    pdf.output(datalake_path)
+    sharepoint_path = f"{request.req_id}.pdf"
+    uploader = SharepointUploader()
+    uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
