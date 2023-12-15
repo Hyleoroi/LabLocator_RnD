@@ -14,8 +14,11 @@ def generate_inputpage(pdf, config, **kwargs):
     longestWidth = pdf.get_string_width(str(longestString)) + 10
     v_width = pdf.w - longestWidth - 30
 
+
+
     for k, v in kwargs.items():
         pdf.cell(2)
         pdf.cell(longestWidth, 5, k + ":", align="L", new_x=XPos.LEFT)
         pdf.cell(longestWidth)
-        pdf.multi_cell(v_width, 5, v, align="J", new_y=YPos.NEXT, new_x=XPos.LMARGIN)
+        v_str = str(v) if v is not None else ""
+        pdf.multi_cell(v_width, 5, v_str, align="J", new_y=YPos.NEXT, new_x=XPos.LMARGIN)

@@ -12,6 +12,7 @@ from pubmedarticle import PubmedArticle
 from lablocatortimer import measure_time
 from statisticsLabLocator import articlecount_per_region
 
+
 @measure_time
 def get_useful_pubmed_info(request: Request):
     """
@@ -26,7 +27,6 @@ def get_useful_pubmed_info(request: Request):
     articles_in_roi = []
 
     # TODO: chhange max items to 10000
-    # TODO: @Marcello Admin value of the app (max items), if not possible to change in the app we change it via Gitpush?
     @measure_time
     def get_all_pubmed_ids(query, max_items=10000):
         """
@@ -48,13 +48,11 @@ def get_useful_pubmed_info(request: Request):
             get_request_url = f'{domain}/esearch.fcgi?db={db}&retmax={max_items}&retmode={retmode}&rettype={rettype}&term={query}'
             respons = requests.get(get_request_url).json()
             if not respons["esearchresult"]["idlist"]:
-                #TODO: @Marcello this is an error when the query is to complex and it returns 0 items. We need to capture this as a results to the client.
-                raise ValueError("Pubmed: no results were found try other query request")
+                return None
             else:
                 return respons["esearchresult"]["idlist"]
         except requests.exceptions.RequestException as e:
             logging.exception(e, ": Something wrong with the connection from or to pubmed")
-            # TODO: @Marcello is it necessary to exit the script if there is an error that interupts the complete flow else return none?
             sys.exit("Exit program: Connection problem with pubmed")
         except KeyError:
             print("Pubmed: no results were found try other query request")
@@ -85,7 +83,7 @@ def get_useful_pubmed_info(request: Request):
         rettype = 'abstract'
 
         # max 3 request per second on Pubmed. Include random sleep to prevent blockage of IP address.
-        #TODO: @Marcello: Do you think it's smart to ask a API key from pubmed? Or do we await the usage of the app to check the traffic load? https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
+
         sleep_time = random.uniform(1, 3)
         time.sleep(sleep_time)
 
@@ -95,7 +93,6 @@ def get_useful_pubmed_info(request: Request):
             return responsXML
         except requests.exceptions.RequestException as e:
             logging.exception(e, ": Something wrong with the connection from or to pubmed")
-            # TODO: @Marcello is it necessary to exit the script if there is an error that interupts the complete flow else return none?
             sys.exit("Exit program: Connection problem with pubmed")
     @measure_time
     def extract_relevant_information_xml(xmldata):
@@ -194,5 +191,8 @@ def get_useful_pubmed_info(request: Request):
                 y.last_author = y.first_author
                 y.first_author = temp
                 articles_in_roi.append(y)
+
         article_count_per_region = articlecount_per_region(usablearticles)
-    return articles_in_roi, article_count_per_region
+        return articles_in_roi, article_count_per_region
+    else:
+        return None, None

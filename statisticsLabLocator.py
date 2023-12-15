@@ -1,11 +1,14 @@
 from pubmedarticle import PubmedArticle
 from typing import List
 from collections import Counter
+from request import Request
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import geopandas as gpd
+import json
+
 
 
 def articlecount_per_region(all_articles_data: List[PubmedArticle]):
@@ -14,15 +17,26 @@ def articlecount_per_region(all_articles_data: List[PubmedArticle]):
     return attribute_counts
 
 
-def generate_collection_statics_image(article_count_per_region, similarities, functions_timing):
+def generate_collection_statics_image(article_count_per_region, similarities, functions_timing,request: Request):
+    """Replaced by heatmap_generator"""
     # first plot (Plot 1) worldmap of count of articles per country
     df = pd.DataFrame(article_count_per_region.items(), columns=['Country', 'Count'])
 
     # Load the world shapefile
     world = gpd.read_file('data/GeoMapData/ne_110m_admin_0_countries.shp')
 
-    # Merge the world shapefile with my data
-    world = world.merge(df, left_on='NAME', right_on='Country', how='left')
+    # Load the GeoInformation JSON file containing country-region mappings
+    with open('data/GeoInformation.json', 'r') as geo_file:
+        geo_data = json.load(geo_file)
+
+    # Get countries belonging to the selected ROI (e.g., Europe)
+    roi_countries = [country['Country'] for country in geo_data if country['Region'] == request.region_of_interest]
+
+    # Filter the world map for countries present in the ROI
+    world_roi = world[world['NAME'].isin(roi_countries)]
+
+    # Merge the world shapefile with the DataFrame containing ROI countries' data
+    world = world_roi.merge(df, left_on='NAME', right_on='Country', how='left')
 
     # Determine the number of countries to label (e.g., top 10)
     top_n = 10
@@ -44,7 +58,7 @@ def generate_collection_statics_image(article_count_per_region, similarities, fu
     fig_height = a4_height_mm / 25.4  # Convert mm to inches
 
     # Save the plot to an image file (e.g., PNG or JPEG) with the adjusted size
-    fig = plt.figure(figsize=(fig_width, fig_height))
+    fig = plt.figure(figsize=(10, 6))
 
     # Add Plot 1 to the top subplot
     ax1 = plt.subplot()
@@ -54,12 +68,13 @@ def generate_collection_statics_image(article_count_per_region, similarities, fu
     for x, y, label in zip(top_countries.geometry.centroid.x, top_countries.geometry.centroid.y,
                            top_countries['Count']):
         ax1.text(x, y, f'{label:.0f}', fontsize=8, ha='center', va='center', color='black')
-    ax1.set_title(f'Top {top_n} Countries with the most articles')
+    ax1.set_title(f'Top {top_n} Countries with the most references')
     ax1.set_xticks([])
     ax1.set_yticks([])
 
+    ax1.set_aspect('equal')
+
     # Create a separate legend for the colorbar for Plot 1
-    # TODO: layout change
     cax1 = fig.add_axes([0.90, 0.26, 0.02, 0.47])  # Adjust the values as needed
     sm1 = plt.cm.ScalarMappable(cmap='YlGnBu',
                                 norm=plt.Normalize(vmin=world['Count'].min(), vmax=world['Count'].max()))
@@ -96,3 +111,69 @@ def generate_collection_statics_image(article_count_per_region, similarities, fu
     statistics_image = ['stats_img1.png','stats_img2.png']
 
     return statistics_image
+
+
+def heatmap_generator(request: Request, article_count_per_region):
+    data = pd.DataFrame(article_count_per_region.items(), columns=['Country', 'Count'])
+
+    # Dictionary mapping regions to their bounding box coordinates
+    regions = {
+        'Europe': (-25, 50, 35, 75),
+        'North America': (-170, -20, 5, 90),
+        'South/Latin America': (-100, -30, -60, 30),
+        'Africa': (-25, 55, -40, 40),
+        'Arab States': (-25, 60, 10, 40),
+        'Asia & Pacific': (30, 185, -60, 75),
+        'Middle east':(25,70,5,40)
+    }
+
+    # Load the world map using GeoPandas
+    world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+    region = request.region_of_interest
+
+    if region in regions:
+         bbox = regions[region]
+         # Create a figure and axis
+         fig, ax = plt.subplots(figsize=(10, 6))  # Adjust the figsize as needed
+
+         # Set the extent of the plot based on the bounding box coordinates
+         ax.set_xlim(bbox[0], bbox[1])  # Adjust the x-axis limits for longitude
+         ax.set_ylim(bbox[2], bbox[3])  # Adjust the y-axis limits for latitude
+
+         # Plot the entire world map
+         world.plot(ax=ax, edgecolor='black',color='lightgrey',linewidth=0.5)
+
+         # Get countries belonging to the selected ROI (e.g., Europe)
+
+         with open('data/GeoInformation.json', 'r') as geo_file:
+             geo_data = json.load(geo_file)
+
+         roi_countries = [country['Country'] for country in geo_data if country['Region'] == region]
+
+         region_count_data = data[data['Country'].isin(roi_countries)]
+
+         merged = world.merge(region_count_data, how='left', left_on='name', right_on='Country')
+
+         # Plot the world map for the selected region
+         world.boundary.plot(ax=ax, color='black', linewidth=0.5)
+
+         # Plot the heatmap based on count values for the selected countries
+         merged.plot(column='Count', ax=ax, legend=True, cmap='YlOrRd', edgecolor='black')
+
+         for idx, row in merged.iterrows():
+             if not pd.isnull(row['Count']):  # Check if count value exists
+                 label_point = row['geometry'].representative_point()
+                 plt.annotate(text=f'{int(row["Count"])}', xy=(label_point.x, label_point.y), ha='center',
+                              color='black')
+
+
+         ax.set_title(f'Reference count in {region}')
+         plt.savefig('stats_img1.png', dpi=300, bbox_inches='tight')
+         statistics_image = ['stats_img1.png']
+
+    return statistics_image
+
+
+
+
+

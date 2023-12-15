@@ -48,7 +48,7 @@
   "Longitude" : "17.873887"
 }, {
   "Country" : "Antarctica",
-  "Region" : "Asia & Pacific",
+  "Region" : " ",
   "Country (#1)" : "AQ",
   "Latidude" : "-75.250973",
   "Longitude" : "-0.071389"
@@ -426,7 +426,7 @@
   "Longitude" : "-5.345374"
 }, {
   "Country" : "Greenland",
-  "Region" : "Europe",
+  "Region" : "Europa",
   "Country (#1)" : "GL",
   "Latidude" : "71.706936",
   "Longitude" : "-42.604303"
@@ -1151,12 +1151,6 @@
   "Latidude" : "33.886917",
   "Longitude" : "9.537499"
 }, {
-  "Country" : "Tonga",
-  "Region" : "Asia & Pacific",
-  "Country (#1)" : "TO",
-  "Latidude" : "-21.178986",
-  "Longitude" : "-175.198242"
-}, {
   "Country" : "Timor-Leste",
   "Region" : "Asia & Pacific",
   "Country (#1)" : "TL",
@@ -1336,4 +1330,10 @@
   "Country (#1)" : "CN",
   "Latidude" : "35.86166",
   "Longitude" : "104.195397"
+}, {
+  "Country" : "Iran",
+  "Region" : "Asia & Pacific",
+  "Country (#1)" : "IR",
+  "Latidude" : "32.4207",
+  "Longitude" : "53.6830"
 } ]
