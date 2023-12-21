@@ -92,8 +92,12 @@ def generate_resultpage(pdf, datatable: List[PubmedArticle], config, similaritie
             pdf.multi_cell(col_width + 5, line_height, author_country, border=1, new_x="RIGHT",
                            new_y="TOP",
                            max_line_height=pdf.font_size, fill=bfill, align='C')
-            pdf.multi_cell(132, line_height, '\n' + textwrap.shorten(row.abstract, width=650), border=1,
+            pdf.multi_cell(132, line_height, '\n' + textwrap.shorten(row.abstract, width=600), border=1,
                            new_x="RIGHT", new_y="TOP", max_line_height=pdf.font_size, fill=bfill)
+
+            if pdf.get_string_width(author_name)>29:
+                author_name = '\n' * 3 + author_name
+
             pdf.multi_cell(30, line_height, author_name, border=1, new_x="RIGHT", new_y="TOP",
                            max_line_height=pdf.font_size, fill=bfill, align='C')
             pdf.multi_cell(52, line_height, affiliation_txt, border=1, new_x="RIGHT", new_y="TOP",

@@ -8,15 +8,33 @@ from ReportGenerator.pdfGenerator import generate_pdf_report, generate_pdf_repor
 
 
 # inputs should be defined outside, like a json file
-KEYWORDS = ["lactulose", "mannitol", "serum"]
+KEYWORDS = ["ghrelin", "fatty acid"]
 
-FIRST_ABSTRACT = """To date, tests of small intestinal passive permeability have involved the ingestion of test molecules whose permeation is assessed indirectly by measuring their urinary recovery. Excretion ratios of marker molecules (eg, lactulose-to-mannitol excretion ratio, LMER) are useful clinically. Measurement of permeability markers in serum would improve the convenience of the tests. Our aim was to assess small intestinal permeability in celiac patients using serum lactulose and mannitol levels with calculation of lactulose to mannitol serum ratios (LMSR) and to compare the results with the standard methods using urinary recoveries. Twenty-four newly diagnosed celiacs and 10 control subjects were studied; 10 celiacs were restudied while established on a gluten-free diet. Test subjects and patients ingested 10 g lactulose and 2.5 g mannitol in 50 ml water. In 10 untreated celiacs and the controls, blood was taken from 0 to 120 min and all urine was collected for 6 hr. The remaining 14 untreated and the 10 treated celiacs had a single serum sample taken 60 min after ingestion of the test solution. At 1 hr after ingestion, the mean mannitol level in normals (0.156 mmol/liter) was significantly higher than in untreated celiacs (0.06 mmol/liter). The 1-hr mean serum lactulose level in normals (0.125 micromol/liter) was significantly lower than in untreated celiacs (0.56 micromol/liter). The median 1-hr LMSR in untreated celiacs was 0.42 compared with 0.039 in normals and 0.08 in treated celiacs. There was a significant correlation between LMSR and LMER. Permeability testing using serum measurements of lactulose and mannitol gave comparable results in celiac patients to the tests using urinary recovery of the permeability markers and may prove to be more convenient, especially in pediatric patients."""
+FIRST_ABSTRACT = """Abstract
+The hunger hormone ghrelin (G) is classified as prohibited substance in professional
+sport by the World Anti-Doping Agency (WADA), due to its known growth hormone
+releasing properties. The endogenous bioactive peptide consists of 28 amino acids
+with a caprylic acid attached to serine at position 3. Within this study, it was aimed
+to develop methods to determine G and desacyl ghrelin (DAG) in plasma and urine by
+means of LC–MS/MS. Two strategies were applied with a bottom-up approach for
+plasma and top-down analyses for urine. Both sample preparation procedures were
+based on solid-phase extraction for enrichment and sample clean-up. Method validation showed good results for plasma and urine with limits of detection (LODs) for G
+and DAG between 30 and 50 pg/ml, recoveries between 45–50%, and imprecisions
+(intra- and inter-day) between 3% and 24%. Plasma analysis was also valid for quantification with accuracies determined with 100% for G and 106% for DAG. The
+minimum required performance level for doping control laboratories is set to 2 ng/ml
+in urine, and the herein established method yielded acceptable results even at 5% of
+this level. As proof-of-concept, plasma levels (G and DAG) of healthy volunteers were
+determined and ranged between 30 and 100 pg/ml for G and 100–1200 pg/ml for
+DAG. In contrast to earlier reported studies using ligand binding assays for urinary G
+and DAG, in this mass spectrometry-based study, no endogenous urinary G and DAG
+were found, although the LODs should enable this."""
+
 
 INPUTPARAMS = {
     'abstract' : FIRST_ABSTRACT,
     'region_of_interest' : 'Europe',
-    'req_id' : '2',
-    'request_person' : 'Stefanie Verstringe',
+    'req_id' : 'test_case_7',
+    'request_person' : 'Theo van Kempen',
     'keywords' : KEYWORDS
     }
 
