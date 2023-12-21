@@ -10,7 +10,7 @@
     "header": {
         "font_size" : 10,
         "font_style" : "",
-        "company" : "Nuscience Belgium NV",
+        "company" : "Nutrition Sciences NV",
         "street" : "Booiebos 5",
         "city" : "B-9031 (Gent) Drongen",
         "homepage" : "www.nuscience.eu",
@@ -26,7 +26,7 @@
     },
     "front_page": {
         "titel": {
-            "text" : "LITERATURE SEARCH TOOL",
+            "text" : "RefeR&D report",
             "font_size" : 24,
             "font_style" : "B"
         },

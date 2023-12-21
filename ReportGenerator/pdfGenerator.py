@@ -8,7 +8,7 @@ from fpdf import FPDF, XPos, YPos
 
 from ReportGenerator.ReportPages.front_page import generate_frontpage
 from ReportGenerator.ReportPages.input_page import generate_inputpage
-from ReportGenerator.ReportPages.results_page import generate_resultpage
+from ReportGenerator.ReportPages.results_page import generate_resultpage, generate_resultpage_no_results
 from ReportGenerator.ReportPages.statistics_page import generate_statistics
 
 def read_config(config_file):
@@ -68,7 +68,7 @@ class MyPDF(FPDF):
         # Performing a line break:
         self.ln(4)
 
-def generate_pdf_report(request: Request, result_table: List[PubmedArticle],statistics_image):
+def generate_pdf_report(request: Request, result_table: List[PubmedArticle],statistics_image,similarities):
     config = read_config("data/config.json")
 
     pdf = MyPDF(config=config)
@@ -78,7 +78,22 @@ def generate_pdf_report(request: Request, result_table: List[PubmedArticle],stat
     #add here the pages you want for the report
     generate_frontpage(pdf,config, request.req_id, request.request_person)
     generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
-    generate_resultpage(pdf,result_table,config)
+    generate_resultpage(pdf,result_table,config,similarities)
     generate_statistics(pdf, statistics_image)
-
+    # Change for databrix
     pdf.output(request.req_id+".pdf")
+
+def generate_pdf_report_no_results(request: Request):
+    config = read_config("data/config.json")
+
+    pdf = MyPDF(config=config)
+    pdf.add_font('DejaVuSans', fname='data/DejaVuSans.ttf')
+    pdf.set_fallback_fonts(['DejaVuSans'])
+    #add here the pages you want for the report
+    generate_frontpage(pdf,config, request.req_id, request.request_person)
+    generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
+    generate_resultpage_no_results(pdf,config)
+    #Change for databrix
+    pdf.output(request.req_id+".pdf")
+
+

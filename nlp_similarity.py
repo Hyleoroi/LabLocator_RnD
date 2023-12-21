@@ -68,7 +68,7 @@ def cosine_similarity_algorithme(articles: List[PubmedArticle], user_input: Requ
         for article in articles:
             if result[0] == article.pmid:
                 article.similarity = result[1]
-                if article.similarity != 0.0:
+                if article.similarity != 0.0: #tis 0.0 is a value treshold, if lower the similarity is worthless, change if needed
                     return_articles.append(article)
 
     return return_articles,statistics2

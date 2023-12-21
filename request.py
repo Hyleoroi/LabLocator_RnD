@@ -18,6 +18,7 @@ class Request:
         :param args: List of keywords or sentences
         :return: Query usable for pubmed, built from the combination of all keywords/sentences.
         """
+        keywords = [x for x in keywords if x is not None]
         query = ' AND '.join(keywords)
         return query
 
