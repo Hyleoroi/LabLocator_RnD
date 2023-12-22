@@ -1,5 +1,7 @@
 import json
 
+import fpdf
+
 from pubmedarticle import PubmedArticle
 from request import Request
 from typing import List
