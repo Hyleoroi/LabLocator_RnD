@@ -13,6 +13,8 @@ from ReportGenerator.ReportPages.input_page import generate_inputpage
 from ReportGenerator.ReportPages.results_page import generate_resultpage, generate_resultpage_no_results
 from ReportGenerator.ReportPages.statistics_page import generate_statistics
 
+from agrifirm_databricks_core.sharepoint.sharepoint_uploader import SharepointUploader
+
 def read_config(config_file):
     with open(config_file, 'r') as f:
         config = json.load(f)
@@ -83,7 +85,11 @@ def generate_pdf_report(request: Request, result_table: List[PubmedArticle],stat
     generate_resultpage(pdf,result_table,config,similarities)
     generate_statistics(pdf, statistics_image)
     # Change for databrix
-    pdf.output(request.req_id+".pdf")
+    datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
+    pdf.output(datalake_path)
+    sharepoint_path = f"{request.req_id}.pdf"
+    uploader = SharepointUploader()
+    uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
 
 def generate_pdf_report_no_results(request: Request):
     config = read_config("data/config.json")
@@ -96,6 +102,12 @@ def generate_pdf_report_no_results(request: Request):
     generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
     generate_resultpage_no_results(pdf,config)
     #Change for databrix
-    pdf.output(request.req_id+".pdf")
+    datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
+    pdf.output(datalake_path)
+    sharepoint_path = f"{request.req_id}.pdf"
+    uploader = SharepointUploader()
+    uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
+
+
 
 
