@@ -3,7 +3,7 @@ import json
 
 class Request:
     def __init__(self, input_dict, query):
-        self.req_id = str(input_dict.get('req_id', ''))
+        self.req_id = str(input_dict.get('req-id', ''))
         self.query = str(query)
         self.abstract = str(input_dict.get('abstract', ''))
         self.region_of_interest = str(input_dict.get('region_of_interest', ''))
