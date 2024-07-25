@@ -1,0 +1,37 @@
+{
+"req-id"
+:
+"10"
+,
+"keywords"
+:[
+"CD4+"
+,
+"CD8+"
+,
+"pig"
+,
+null
+,
+null
+],
+"region_of_interest"
+:
+"Europe"
+,
+"abstract"
+:
+"Mycoplasma hyopneumoniae is the primary agent of enzootic pneumonia in pigs. To minimize the economic losses caused by this disease, M. hyopneumoniae vaccination is commonly practiced. However, the persistence of M. hyopneumoniae vaccine-induced immunity, especially the cell-mediated immunity, till the moment of slaughter has not been investigated yet. Therefore, on two commercial farms, 25 pigs (n = 50) received a commercial bacterin intramuscularly at 16 days of age. Each month, the presence of M. hyopneumoniae-specific serum antibodies was analyzed and the proliferation of and TNF-α, IFN-γ and IL-17A production by different T cell subsets in blood was assessed using recall assays. Natural infection with M. hyopneumoniae was assumed in both farms. However, the studied pigs remained M. hyopneumoniae negative for almost the entire trial. Seroconversion was not observed after vaccination and all pigs became seronegative at two months of age. The kinetics of the T cell subset frequencies was similar on both farms. Mycoplasma hyopneumoniae-specific cytokine-producing CD4+CD8+ T cells were found in blood of pigs from both farms at one month of age but decreased significantly with increasing age. On the other hand, T cell proliferation after in vitro M. hyopneumoniae stimulation was observed until the end of the fattening period. Furthermore, differences in humoral and cell-mediated immune responses after M. hyopneumoniae vaccination were not seen between pigs with and without maternally derived antibodies. This study documents the long-term M. hyopneumoniae vaccine-induced immune responses in fattening pigs under field conditions. Further research is warranted to investigate the influence of a natural infection on these responses. "
+,
+"request_person"
+:
+"Robin Vandercruyssen"
+,
+"request_person_e-mail"
+:
+"r.vandercruyssen@agrifirm.com"
+,
+"from_date"
+:
+1
+}

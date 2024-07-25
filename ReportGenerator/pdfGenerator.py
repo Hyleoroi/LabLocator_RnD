@@ -13,8 +13,6 @@ from ReportGenerator.ReportPages.input_page import generate_inputpage
 from ReportGenerator.ReportPages.results_page import generate_resultpage, generate_resultpage_no_results
 from ReportGenerator.ReportPages.statistics_page import generate_statistics
 
-from agrifirm_databricks_core.sharepoint.sharepoint_uploader import SharepointUploader
-
 def read_config(config_file):
     with open(config_file, 'r') as f:
         config = json.load(f)
@@ -72,7 +70,7 @@ class MyPDF(FPDF):
         # Performing a line break:
         self.ln(4)
 
-def generate_pdf_report(request: Request, result_table: List[PubmedArticle],statistics_image,similarities):
+def generate_pdf_report(request: Request, result_table: List[PubmedArticle],statistics_image,similarities, istester):
     config = read_config("data/config.json")
 
     pdf = MyPDF(config=config)
@@ -83,15 +81,24 @@ def generate_pdf_report(request: Request, result_table: List[PubmedArticle],stat
     generate_frontpage(pdf,config, request.req_id, request.request_person)
     generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
     generate_resultpage(pdf,result_table,config,similarities)
-    generate_statistics(pdf, statistics_image)
-    # Change for databrix
-    datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
-    pdf.output(datalake_path)
-    sharepoint_path = f"{request.req_id}.pdf"
-    uploader = SharepointUploader()
-    uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
+    generate_statistics(pdf, statistics_image,config)
 
-def generate_pdf_report_no_results(request: Request):
+    #Change for databrix
+    if not istester:
+        try:
+            from agrifirm_databricks_core.sharepoint.sharepoint_uploader import SharepointUploader
+            datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
+            pdf.output(datalake_path)
+            sharepoint_path = f"{request.req_id}.pdf"
+            uploader = SharepointUploader()
+            uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
+        except ImportError as e:
+            print(f"Error importing SharepointUploader: {e}")
+            raise
+    else:
+        pdf.output("C://Users//Gebruiker//coding//LabLocator_RnD//tester.pdf")
+
+def generate_pdf_report_no_results(request: Request, istester):
     config = read_config("data/config.json")
 
     pdf = MyPDF(config=config)
@@ -101,13 +108,21 @@ def generate_pdf_report_no_results(request: Request):
     generate_frontpage(pdf,config, request.req_id, request.request_person)
     generate_inputpage(pdf,config,Keywords= request.query.replace('AND',', '), Region= request.region_of_interest, Abstract=request.abstract)
     generate_resultpage_no_results(pdf,config)
-    #Change for databrix
-    datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
-    pdf.output(datalake_path)
-    sharepoint_path = f"{request.req_id}.pdf"
-    uploader = SharepointUploader()
-    uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
 
+    #Change for databrix
+    if not istester:
+        try:
+            from agrifirm_databricks_core.sharepoint.sharepoint_uploader import SharepointUploader
+            datalake_path = "/dbfs/mnt/current/datascience/platinum/general/innolab/result.pdf"
+            pdf.output(datalake_path)
+            sharepoint_path = f"{request.req_id}.pdf"
+            uploader = SharepointUploader()
+            uploader.upload_project_file("innolab", datalake_path, sharepoint_path)
+        except ImportError as e:
+            print(f"Error importing SharepointUploader: {e}")
+            raise
+    else:
+        pdf.output("C://Users//Gebruiker//coding//LabLocator_RnD//tester.pdf")
 
 
 

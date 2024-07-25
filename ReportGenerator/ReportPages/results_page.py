@@ -7,7 +7,7 @@ from pubmedarticle import PubmedArticle
 def generate_resultpage(pdf, datatable: List[PubmedArticle], config, similarities):
     # Specific for scout4you tool json file
     pdf.add_page(orientation="landscape")
-    pdf.title1('Top 15 similar references of ' + str(len(similarities)) + ' references')
+    pdf.title1('Top 15 similar references of ' + str(len([value for value in similarities if value != 0.0])) + ' references')
     col_width = 20
     line_height = 24
 
@@ -100,7 +100,7 @@ def generate_resultpage(pdf, datatable: List[PubmedArticle], config, similaritie
 
             pdf.multi_cell(30, line_height, author_name, border=1, new_x="RIGHT", new_y="TOP",
                            max_line_height=pdf.font_size, fill=bfill, align='C')
-            pdf.multi_cell(52, line_height, affiliation_txt, border=1, new_x="RIGHT", new_y="TOP",
+            pdf.multi_cell(52, line_height, shorten_from_back(affiliation_txt,200), border=1, new_x="RIGHT", new_y="TOP",
                            max_line_height=pdf.font_size, fill=bfill, align='C')
             pdf.ln(line_height)
 
@@ -123,4 +123,14 @@ def generate_resultpage_no_results(pdf, config):
     pdf.set_font(config["font"], size=12)
     pdf.write(line_height, "It looks like there are no references found or there are no references located in your region of interest.\nYou can try again and limit the keywords so you search in a broader scope: ")
     pdf.set_text_color(51, 102, 204)
-    pdf.write(line_height, "Input form for RefeR&D.", link='https://agrifirm.sharepoint.com/sites/rdglobal/innolab/Lists/Innolab%20LabLocator/NewForm.aspx?Source=https%3A%2F%2Fagrifirm%2Esharepoint%2Ecom%2Fsites%2Frdglobal%2Finnolab%2FLists%2FInnolab%2520LabLocator%2FAllItems%2Easpx&ContentTypeId=0x010012448E5AF7E03F49A70BFCF47B4FD48100362EEDC5A5AE394EBB6C5F582B8151E6&RootFolder=%2Fsites%2Frdglobal%2Finnolab%2FLists%2FInnolab%20LabLocator')
+    pdf.write(line_height, "Input form for RefeR&D.", link=config["websitelink"]["link"])
+
+def shorten_from_back(text, width, placeholder="..."):
+    if len(text) <= width:
+        return text
+    else:
+        truncation_length = width - len(placeholder)
+        if truncation_length > 0:
+            return placeholder + text[-truncation_length:]
+        else:
+            return text[-width:]

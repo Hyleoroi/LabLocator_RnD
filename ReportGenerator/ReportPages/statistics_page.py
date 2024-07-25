@@ -1,9 +1,13 @@
 from PIL import Image
+from fpdf import XPos
 
-def generate_statistics(pdf, statistics_image):
+def generate_statistics(pdf, statistics_image,config):
     pdf.add_page()
     pdf.set_auto_page_break(auto=True, margin=0)
     pdf.title1("Heatmap")
+    pdf.set_font(config["font"], config["font_style"], config["font_size"])
+    pdf.cell(200,5,"Note:The heatmap can show more references then the result table, this due to a restriction of similarities close to zero %.", align="L", new_x=XPos.LEFT)
+
 
     img = Image.open(statistics_image[0])
     img_width, img_height = img.size

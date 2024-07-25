@@ -26,7 +26,7 @@
     },
     "front_page": {
         "titel": {
-            "text" : "RefeR&D report",
+            "text" : "ReferR&D report",
             "font_size" : 24,
             "font_style" : "B"
         },
@@ -47,5 +47,8 @@
         "title_fill_color" : [121, 185, 126],
         "row_fill_color" : [219, 236, 220],
         "font_color" : [51,102,153]
+    },
+    "websitelink": {
+        "link" : "https://www.agrifirm.sharepoint.com/sites/rdglobal/innolab/ReferR%26D"
     }
 }
