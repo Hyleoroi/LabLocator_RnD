@@ -1,15 +1,4 @@
 # Databricks notebook source
-# DBTITLE 1,Install Required Packages
-# MAGIC %sh
-# MAGIC uv pip install geopandas==0.14.4 fpdf2 --link-mode=copy
-
-# COMMAND ----------
-
-# MAGIC %sh
-# MAGIC uv pip freeze
-
-# COMMAND ----------
-
 # DBTITLE 1,Import Required Libraries
 import glob
 import json
