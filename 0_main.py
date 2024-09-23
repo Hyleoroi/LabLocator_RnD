@@ -1,7 +1,12 @@
 # Databricks notebook source
 # DBTITLE 1,Install Required Packages
 # MAGIC %sh
-# MAGIC uv pip install geopandas fpdf2 --link-mode=copy
+# MAGIC uv pip install geopandas==0.14.4 fpdf2 --link-mode=copy
+
+# COMMAND ----------
+
+# MAGIC %sh
+# MAGIC uv pip freeze
 
 # COMMAND ----------
 
@@ -27,26 +32,11 @@ for json_file in json_files:
 
 # COMMAND ----------
 
-try:
-    main(json_list[4])
-except Exception as e:
-    print(json_list[4], e)
-
-# COMMAND ----------
-
-import os
-from main import main
-import json
-
-folder = "/dbfs/mnt/production/dataplatform/silver/sharepoint/innolab/"
-
-for filename in os.listdir(folder):
-    path = os.path.join(folder, filename)
+# DBTITLE 1,Main
+# Run the main function for all requests from json_list
+for json_dict in json_list:
     try:
-        with open(path, 'r') as json_file: 
-            inputparams = json.load(json_file)
-            main(inputparams)
-            json_file.close()
+        main(json_dict)
     except Exception as e:
-        print(filename, e)
+        print(f"Error generating req-id: json_dict['req-id']", e)
         continue
