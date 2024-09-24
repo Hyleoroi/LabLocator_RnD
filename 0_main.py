@@ -1,4 +1,10 @@
 # Databricks notebook source
+# DBTITLE 1,Install Required Libraries
+# MAGIC %sh
+# MAGIC uv pip install -r requirements.txt
+
+# COMMAND ----------
+
 # DBTITLE 1,Import Required Libraries
 import glob
 import json
